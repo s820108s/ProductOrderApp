@@ -1,13 +1,15 @@
 <template>
-
+<div id="createProduct">
+  {{msg}}
+</div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'createProduct',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Its time to create Product'
     }
   }
 }
