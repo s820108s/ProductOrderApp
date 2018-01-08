@@ -1,15 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import CreateProduct from '@/components/CreateProduct'
-
+import HelloWorld from '@/components/CreateProduct'
+/* eslint-disable */
 Vue.use(Router)
 
 export default new Router({
-  routes: [
-    {
-      path: '/',
-      name: 'CreateProduct',
-      component: CreateProduct
-    }
-  ]
+    routes: [{
+        path: '/',
+        name: 'HelloWorld',
+        component: HelloWorld
+    }]
 })

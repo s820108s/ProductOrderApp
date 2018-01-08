@@ -1,5 +1,5 @@
 <template>
-<div id="createProduct">
+<div id="HelloWorld">
   {{msg}}
 </div>
 </template>
@@ -9,7 +9,7 @@ export default {
   name: 'createProduct',
   data () {
     return {
-      msg: 'Its time to create Product'
+      msg: 'HelloWorld'
     }
   }
 }

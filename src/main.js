@@ -1,19 +1,21 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
+/* eslint-disable */
 import Vue from 'vue'
 import App from './App'
-import CreateProduct from './components/CreateProduct'
+import 'element-ui/lib/theme-chalk/index.css'
+import ElementUI from 'element-ui'
 import router from './router'
-import FishUI from 'fish-ui'
 
-Vue.use(FishUI)
+Vue.use(ElementUI)
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
-  el: '#app',
-  router,
-  template: '<App/>',
-  components: { App, CreateProduct }
-}).$mount('#app')
+    el: '#app',
+    router,
+    render: h => h(App),
+    template: '<App/>',
+    component: require('./App').default
+})
