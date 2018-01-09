@@ -1,52 +1,31 @@
 <template>
 <div id="app">
-    <el-main>
-      <el-table :data="tableData">
-        <el-table-column prop="date" label="日期" width="140">
-        </el-table-column>
-        <el-table-column prop="name" label="姓名" width="120">
-        </el-table-column>
-        <el-table-column prop="address" label="地址">
-        </el-table-column>
-        <el-table-column label="圖片">
-         <template slot-scope="scope">
-                <img :src=pic />
-         </template>
-        </el-table-column>
-      </el-table>
-    </el-main>
+  <el-col :span="5">   
+    <el-menu
+      default-active="1"
+      class="el-menu-vertical-demo"
+      @open="handleOpen"
+      @close="handleClose">
+      <el-submenu index="1">
+        <template slot="title">
+          <i class="el-icon-menu"></i>
+          <span>應用程式</span>
+        </template>
+        <el-menu-item-group>
+          <el-menu-item index="1-1">Function 1</el-menu-item>
+          <el-menu-item index="1-2">Function 2</el-menu-item>
+        </el-menu-item-group>
+      </el-submenu>
+    </el-menu>
+  </el-col>
+ </el-row>
 </div>
 </template>
 
 <style>
-  .img{
-    width: 100%;
-    height: auto;
-  }
-  .el-header {
-    background-color: #B3C0D1;
-    color: #333;
-    line-height: 60px;
-  }  
-  .el-aside {
-    color: #333;
+  .app {
+    background-color: "#00FF00";
+    text-color: "#fff";
+    active-text-color: "#ffd04b"
   }
 </style>
-
-<script>
-export default {
-  name: 'app',
-  data () {
-    const item = {
-      date: '2018-01-09',
-      name: '泱泱',
-      address: '泱泱我老婆'
-    }
-    return {
-      tableData: Array(20).fill(item),
-      pic: 'https://4.bp.blogspot.com/-hN5tTUr0CU8/WMgPkELE9aI/AAAAAAAAVbU/7SmFV-TwRcQcT3AmMtaPJZky62-4WkoRACKgB/s280/33.jpg'
-    }
-  }
-}
-</script>
-
