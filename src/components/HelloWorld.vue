@@ -1,5 +1,5 @@
 <template>
-  <div class="product">
+  <div class="HelloWorld">
     <el-main>
       <el-table :data="tableData">
         <el-table-column prop="date" label="日期" width="140">
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'product',
+  name: 'HelloWorld',
   data () {
     const item = {
       date: '2018-01-09',
@@ -28,7 +28,7 @@ export default {
       address: '泱泱我老婆'
     }
     return {
-      tableData: Array(20).fill(item),
+      tableData: Array(2).fill(item),
       pic: 'https://4.bp.blogspot.com/-hN5tTUr0CU8/WMgPkELE9aI/AAAAAAAAVbU/7SmFV-TwRcQcT3AmMtaPJZky62-4WkoRACKgB/s280/33.jpg'
     }
   }
