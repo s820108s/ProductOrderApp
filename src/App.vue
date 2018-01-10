@@ -23,9 +23,10 @@
 </template>
 
 <style>
-  .app {
+  .el-menu {
     background-color: "#00FF00";
     text-color: "#fff";
-    active-text-color: "#ffd04b"
+    active-text-color: "#ffd04b";
+    width: "device-width"    
   }
 </style>
