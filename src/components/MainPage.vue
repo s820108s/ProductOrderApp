@@ -1,5 +1,5 @@
 <template>
-  <div class="HelloWorld">
+  <div class="MainPage">
     <el-main>
       <el-table :data="tableData">
         <el-table-column prop="date" label="日期" width="140">
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'MainPage',
   data () {
     const item = {
       date: '2018-01-09',
@@ -34,18 +34,3 @@ export default {
   }
 }
 </script>
-
-<style>
-  .img{
-    width: 100%;
-    height: auto;
-  }
-  .el-header {
-    background-color: #B3C0D1;
-    color: #333;
-    line-height: 60px;
-  }  
-  .el-aside {
-    color: #333;
-  }
-</style>
