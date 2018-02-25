@@ -23,7 +23,7 @@ export default {
   name: 'MainPage',
   data () {
     const item = {
-      date: '2018-01-09',
+      time: null,
       name: '泱泱',
       address: '泱泱我老婆'
     }
