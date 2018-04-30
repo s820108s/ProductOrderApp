@@ -1,7 +1,9 @@
 <template>
 <div>
 <el-header>
+<router-link :to="{ name: 'MainPage' }">
    <img :src=pic height="80" width="80" class="pic-Circle"/>  
+   </router-link>    
 </el-header>
 </div>
 </template>
